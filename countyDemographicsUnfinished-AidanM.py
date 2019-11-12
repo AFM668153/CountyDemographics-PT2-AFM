@@ -22,11 +22,13 @@ def high_income_counties(counties):
 
 def lowest_median_income(counties):
     """Return a name of a county with the lowest median household income"""
-    
-    if median_houseold_income < 
-    list; lowest_median_income
+    county_name = counties[0]["County"];
+    lowest_median_income = counties[0]["Income"]["Median Houseold Income"];
     for data in county_demographics
-        return 
+        if data["Income"]["Median Houseold Income"] < lowest_median_income:
+            lowest_median_income = data["Income"]["Median Houseold Income"] 
+            county_name = data["County"]
+    return county_name
         
 
 def alphabetically_first_county(counties):
