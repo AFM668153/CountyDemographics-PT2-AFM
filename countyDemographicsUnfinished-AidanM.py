@@ -14,7 +14,7 @@ def high_income_counties(counties):
     """Return a LIST of the counties with a median household income over $90,000."""
     high_income_counties = []
     for data in county_demographics:
-        if data["Income"]["Median Houseold Income"] > 90000 and data["State"] == "AL";
+        if data["Income"]["Median Houseold Income"] > 90000 and data["State"] == "AL":
         
         add county to high_income_counties
     return list high_income_counties
@@ -23,7 +23,7 @@ def high_income_counties(counties):
 def lowest_median_income(counties):
     """Return a name of a county with the lowest median household income"""
     county_name = counties[0]["County"];
-    lowest_median_income = counties[0]["Income"]["Median Houseold Income"];
+    lowest_median_income = counties[0]["Income"]["Median Houseold Income"]:
     for data in county_demographics
         if data["Income"]["Median Houseold Income"] < lowest_median_income:
             lowest_median_income = data["Income"]["Median Houseold Income"] 
